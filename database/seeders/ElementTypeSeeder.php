@@ -16,18 +16,23 @@ class ElementTypeSeeder extends Seeder
     public function run()
     {
         $Types = [
-            'text',
-            'password',
-            'email',
-            'tel',
+            '1' => [
+                'text',
+                'password',
+                'email',
+                'tel',
+            ],
+
 
         ];
 
-        foreach ($Types as $Type) {
-
-            DB::table('element_types')->insert([
-                'TypeName' => $Type
-            ]);
+        foreach ($Types as $tag => $Types) {
+            foreach ($Types as $Type) {
+                DB::table('element_types')->insert([
+                    'tag_type_id' => $tag,
+                    'TypeName' => $Type,
+                ]);
+            }
         }
     }
 }

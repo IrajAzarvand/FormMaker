@@ -15,16 +15,16 @@ class TagTypeSeeder extends Seeder
      */
     public function run()
     {
-        $Types = [
+        $Tags = [
             'input',
             'label',
 
         ];
 
-        foreach ($Types as $Type) {
+        foreach ($Tags as $Tag) {
 
             DB::table('tag_types')->insert([
-                'TagName' => $Type
+                'TagName' => $Tag
             ]);
         }
     }
