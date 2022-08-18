@@ -33,6 +33,7 @@ class ComposerStaticInit3f9667b8c5dabe4fcb5af1f41ebc7133
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
+        'be2dabd89e6571c763d3c521b1c3701e' => __DIR__ . '/../..' . '/app/Helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -518,6 +519,8 @@ class ComposerStaticInit3f9667b8c5dabe4fcb5af1f41ebc7133
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\ElementTypeController' => __DIR__ . '/../..' . '/app/Http/Controllers/ElementTypeController.php',
+        'App\\Http\\Controllers\\FormCreatorController' => __DIR__ . '/../..' . '/app/Http/Controllers/FormCreatorController.php',
+        'App\\Http\\Controllers\\TagTypeController' => __DIR__ . '/../..' . '/app/Http/Controllers/TagTypeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -645,6 +648,7 @@ class ComposerStaticInit3f9667b8c5dabe4fcb5af1f41ebc7133
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\ElementTypeSeeder' => __DIR__ . '/../..' . '/database/seeders/ElementTypeSeeder.php',
+        'Database\\Seeders\\TagTypeSeeder' => __DIR__ . '/../..' . '/database/seeders/TagTypeSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',

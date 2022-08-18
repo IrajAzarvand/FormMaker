@@ -13,4 +13,15 @@ class FormCreatorController extends Controller
         return view('welcome');
         // dd($tagList);
     }
+
+
+    public function stuff()
+    {
+        dd(TagList(), ElementsList());
+    }
+
+    public function FormStuffs(Request $request)
+    {
+        dd($request);
+    }
 }
