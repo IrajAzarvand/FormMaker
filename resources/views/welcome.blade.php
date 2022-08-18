@@ -8,8 +8,17 @@
     <title>Document</title>
 </head>
 
-<body>
+<body dir="rtl">
+    <h1>فرم ساز لاراول</h1>
+    <form action="" method="post">
 
+        <select name="TagType" id="">نوع تگ را انتخاب کنید
+            <option value="">
+
+            </option>
+        </select>
+
+    </form>
 </body>
 
 </html>
