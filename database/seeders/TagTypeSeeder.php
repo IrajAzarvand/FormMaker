@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class ElementTypeSeeder extends Seeder
+class TagTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,17 +16,15 @@ class ElementTypeSeeder extends Seeder
     public function run()
     {
         $Types = [
-            'text',
-            'password',
-            'email',
-            'tel',
+            'input',
+            'label',
 
         ];
 
         foreach ($Types as $Type) {
 
-            DB::table('element_types')->insert([
-                'TypeName' => $Type
+            DB::table('tag_types')->insert([
+                'TagName' => $Type
             ]);
         }
     }

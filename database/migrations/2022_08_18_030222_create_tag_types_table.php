@@ -13,10 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('element_types', function (Blueprint $table) {
+        Schema::create('tag_types', function (Blueprint $table) {
             $table->id();
-            $table->string('TypeName')->nullable();
-            $table->foreignId('tag_type_id')->nullable()->constrained();
+            $table->string('TagName')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('element_types');
+        Schema::dropIfExists('tag_types');
     }
 };
