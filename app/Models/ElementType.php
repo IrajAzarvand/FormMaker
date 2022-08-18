@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class ElementType extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'TypeName',
+        'tag_type_id',
+    ];
+
+    public function tag()
+    {
+        return $this->belongsTo(TagType::class);
+    }
 }
