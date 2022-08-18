@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class FormCreatorController extends Controller
 {
-    public function LoadPge()
+    public function index()
     {
-        $tagList = TagType::all();
-
-        dd($tagList);
+        $tagList = TagType::with('elements')->get();
+        return view('welcome');
+        // dd($tagList);
     }
 }

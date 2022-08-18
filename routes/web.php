@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FormCreator;
+use App\Http\Controllers\FormCreatorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [FormCreator::class, 'LoadPge']);
+Route::get('/', [FormCreatorController::class, 'index']);
