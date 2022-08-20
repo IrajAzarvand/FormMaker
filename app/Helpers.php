@@ -6,8 +6,8 @@ function TagList()
 {
     return [
 
-        'input',
-        'label',
+        'input ورودی ',
+        'select لیست کشویی',
 
 
     ];
