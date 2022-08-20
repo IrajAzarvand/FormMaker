@@ -79,7 +79,7 @@
                                                         @foreach (TagList() as $taglist)
                                                             <option value="taglist">{{ $taglist }}</option>
                                                         @endforeach
-
+                                                    </select>
                                                 </div>
                                             </div>
 
