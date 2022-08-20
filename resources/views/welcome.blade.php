@@ -67,50 +67,90 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="FormName">نام فرم</label>
-                                                    <input id="FormName" type="text" name="FormName" class="form-control" placeholder="نام فرم را وارد کنید">
+                                                    <input id="FormName" type="text" name="FormName"
+                                                        class="form-control" placeholder="نام فرم را وارد کنید">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-3">
+                                            <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label>تگ</label>
-                                                    <select name="SelecredTag" class="form-control select2" style="width: 100%;">
+                                                    <label> تگ </label>
+                                                    <select name="SelecredTag" class="form-control select2"
+                                                        style="width: 100%;">
                                                         @foreach (TagList() as $taglist)
-                                                            <option value="taglist">{{ $taglist }}</option>
+                                                        <option value="taglist">{{ $taglist }}</option>
                                                         @endforeach
                                                     </select>
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>نوع ورودی</label>
-                                                    <select class="form-control select2" style="width: 100%;">
-                                                        <option value="متنی">text-متن</option>
-                                                        <option value="رمزعبور">password-رمزعبور</option>
-                                                        <option value="تلفن">tel-تلفن</option>
-                                                        <option value="ایمیل">Email-ایمیل</option>
-                                                    </select>
+                                            <div class="col-md-1 d-flex justify-content-center mt-4">
+                                                <div class="form-group mt-2">
+                                                    <button class="btn btn-success mr-2">+</button>
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label for="NameTag">Name=""-نوع ورودی</label>
-                                                    <input id="NameTag" type="text" name="NameTag" class="form-control" placeholder="نام تگ را وارد کنید">
-                                                </div>
-                                            </div>
+                                            <div class="col-md-9 bg-gray-light p-3 rounded">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="TitleTag">عنوان تگ(TitleTag)</label>
+                                                            <input id="TitleTag" type="text" name="TitleTag"
+                                                                class="form-control"
+                                                                placeholder="عنوان تگ را وارد کنید">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>نوع ورودی کاربر</label>
+                                                            <select class="form-control select2" style="width: 100%;">
+                                                                <option value="متنی">text-متن</option>
+                                                                <option value="رمزعبور">password-رمزعبور</option>
+                                                                <option value="تلفن">tel-تلفن</option>
+                                                                <option value="ایمیل">Email-ایمیل</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="NameTag">نام تگ (Input Name)</label>
+                                                            <input id="NameTag" type="text" name="NameTag"
+                                                                class="form-control" placeholder="نام تگ را وارد کنید">
+                                                        </div>
+                                                    </div>
 
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label for="ClassTag">Class=""-کلاس تگ</label>
-                                                    <input id="ClassTag" type="text" name="ClassTag" class="form-control" placeholder="کلاس تگ را وارد کنید">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="NameTag">آیدی تگ(Input ID)</label>
+                                                            <input id="NameTag" type="text" name="NameTag"
+                                                                class="form-control" placeholder="آیدی تگ را وارد کنید">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="NameClass">نام کلاس(Input Class)</label>
+                                                            <input id="NameClass" type="text" name="NameClass"
+                                                                class="form-control"
+                                                                placeholder="نام کلاس را وارد کنید">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="PlaceHolder">PlaceHolder</label>
+                                                            <input id="PlaceHolder" type="text" name="PlaceHolder"
+                                                                class="form-control"
+                                                                placeholder="PlaceHolder را وارد کنید">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
 
                                         </div>
-
 
                                         <div class="col-md-12">
                                             <input type="submit" class="btn btn-success btn-send" value="Send message">
