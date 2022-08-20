@@ -75,7 +75,7 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label>فرم تگ</label>
+                                                    <label>تگ</label>
                                                     <select class="form-control select2" style="width: 100%;">
                                                         <option value="متنی">label-متنی</option>
                                                         <option value="ورودی">input-ورودی</option>
