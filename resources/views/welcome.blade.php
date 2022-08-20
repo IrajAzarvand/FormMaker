@@ -74,20 +74,12 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
-<<<<<<< HEAD
-                                                    <label>فرم تگ</label>
+                                                    <label>تگ</label>
                                                     <select name="SelecredTag" class="form-control select2" style="width: 100%;">
                                                         @foreach (TagList() as $taglist)
                                                             <option value="taglist">{{ $taglist }}</option>
                                                         @endforeach
-=======
-                                                    <label>تگ</label>
-                                                    <select class="form-control select2" style="width: 100%;">
-                                                        <option value="متنی">label-متنی</option>
-                                                        <option value="ورودی">input-ورودی</option>
-                                                        <option value="لینک">href-لینک</option>
->>>>>>> b08040c4cb34775b36af3356db7223fca759f8c3
-                                                    </select>
+
                                                 </div>
                                             </div>
 
