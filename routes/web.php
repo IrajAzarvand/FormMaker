@@ -20,4 +20,4 @@ Route::get('/', [FormCreatorController::class, 'index']);
 //this will get all of the tags and elements that the user wants to use in the result form.
 Route::post('FormStuffs', [FormCreatorController::class, 'FormStuffs'])->name('FormStuffs');
 
-Route::get('stuff', [FormCreatorController::class, 'stuff'])->name('staff');
+Route::get('stuff', [FormCreatorController::class, 'stuff'])->name('stuff');

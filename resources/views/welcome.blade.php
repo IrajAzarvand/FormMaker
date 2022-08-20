@@ -65,21 +65,20 @@
                                     <div class="controls p-3">
                                         <div class="row">
                                             <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="FormName">نام فرم</label>
-                                                <input id="FormName" type="text" name="FormName" class="form-control"
-                                                    placeholder="نام فرم را وارد کنید">
+                                                <div class="form-group">
+                                                    <label for="FormName">نام فرم</label>
+                                                    <input id="FormName" type="text" name="FormName" class="form-control" placeholder="نام فرم را وارد کنید">
+                                                </div>
                                             </div>
-                                        </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>فرم تگ</label>
-                                                    <select class="form-control select2" style="width: 100%;">
-                                                        <option value="متنی">label-متنی</option>
-                                                        <option value="ورودی">input-ورودی</option>
-                                                        <option value="لینک">href-لینک</option>
+                                                    <select name="SelecredTag" class="form-control select2" style="width: 100%;">
+                                                        @foreach (TagList() as $taglist)
+                                                            <option value="taglist">{{ $taglist }}</option>
+                                                        @endforeach
                                                     </select>
                                                 </div>
                                             </div>
@@ -99,16 +98,14 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="NameTag">Name=""-نوع ورودی</label>
-                                                    <input id="NameTag" type="text" name="NameTag" class="form-control"
-                                                    placeholder="نام تگ را وارد کنید">
+                                                    <input id="NameTag" type="text" name="NameTag" class="form-control" placeholder="نام تگ را وارد کنید">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="ClassTag">Class=""-کلاس تگ</label>
-                                                    <input id="ClassTag" type="text" name="ClassTag" class="form-control"
-                                                    placeholder="کلاس تگ را وارد کنید">
+                                                    <input id="ClassTag" type="text" name="ClassTag" class="form-control" placeholder="کلاس تگ را وارد کنید">
                                                 </div>
                                             </div>
 
